@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>NuCamp: A Better Way To Camp</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html">
+                    <img src="img/logo.png" class="img-fluid" /> 
+                    </a>
+                 </div>
+                <div class="col">
+                    <h1>NuCamp</h1>
+                    <h2>a better way to camp</h2>
+                </div>
+                <div class="col col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="nucampNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-camera"></i> Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    </ul>
+                    <span class="navbar-text ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
+                    </span>
+            </div>
+            </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Enter Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember Me</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Gallery</li>
+                </ol>
+                <h2>Gallery</h2>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+<!-- Gallery -->
+<div class="row mt-4">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 mx-auto">
+      <img src="img/changeitup6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Bring a hammock to Breadcrumb trail!" />
+  
+      <img src="img/changeitup5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="The view is amazing" />
+    </div>
+  
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="img/changeitup2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="A warm fire for coding" />
+    
+        <img src="img/changeitup4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Leads to good food for your career" />
+      </div>
+  
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img src="img/changeitup3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Camp out on the Chrome River and go stargazing" />
+    
+        <img src="img/changeitup1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Get ready to come back for the next trip" />
+      </div>
+  </div>
+  <!-- Gallery -->
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
